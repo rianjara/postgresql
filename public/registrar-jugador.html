@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Jugador</title>
+</head>
+<body>
+
+<h1>Registro de jugadores</h1>
+
+<form name="registrar-jugador" action="/crear-jugador" method="post">
+
+    <div>
+        <label>Usuario: </label>
+        <input type="text" name="jugador_usuario" value="rianjara"/>
+    </div>
+    <div>
+        <label>Password: </label>
+        <input type="password" name="jugador_password" value="rianjara"/>
+    </div>
+    <div>
+        <label>Nombre: </label>
+        <input type="text" name="jugador_nombre" value="Rick"/>
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="email" name="jugador_email" value="rianjara@espol.edu.ec"/>
+    </div>
+    <div>
+        <label>Perfil: </label>
+        <select name="jugador_perfil">
+            <option value="padre">Padre</option>
+            <option value="hijo">Hijo</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Registrar</button>
+    </div>
+
+</form>
+
+</body>
+</html>
