@@ -31,4 +31,21 @@ router.post('/crear-jugador', function(req, res) {
   });
 });
 
+router.get('/ver-jugadores', function(req, res) {
+
+  models.Usuario.findAll().then(function(usuarios) {
+    res.render('ver-jugadores', { usuarios: usuarios });
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
 module.exports = router;

@@ -1,14 +1,14 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "admin",
+    "username": "postgresql",
+    "password": "N0D3J5p057gr35q1",
     "database": "capstone",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "nodejspostgresql",
-    "password": "N0D3J5p057gr35q1",
+    "username": "postgres",
+    "password": "admin",
     "database": "capstone",
     "host": "127.0.0.1",
     "dialect": "postgres"

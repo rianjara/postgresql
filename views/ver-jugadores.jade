@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1 Jugadores
+    table
+        tr
+            th Id
+            th Usuario
+            th Nombre
+            th Email
+            th Perfil
+            th Fecha Creación
+            th Fecha Actualización
+            th Foreign key
+        each usuario in usuarios
+            tr
+                td #{usuario.usuario}
+                td #{usuario.nombre}
+                td #{usuario.email}
+                td #{usuario.perfil}
+                td #{usuario.createdAt}
+                td #{usuario.updatetedAd}
+                td #{usuario.EquipoId}
+    script.
+        console.log("#{usuarios[0].usuario}");
