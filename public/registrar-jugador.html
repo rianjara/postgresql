@@ -2,42 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registrar Jugador</title>
+    <link rel="stylesheet" href="/stylesheets/libs/normalize.css">
+    <link rel="stylesheet" href="/libs/bootstrap-3.3.6/css/bootstrap.min.css">
+    <script src="/javascripts/libs/jquery-2.2.0.min.js"></script>
+    <style type="text/css"></style><script src="/libs/bootstrap-3.3.6/js/bootstrap.js"></script>
 </head>
 <body>
 
-<h1>Registro de jugadores</h1>
+    <h1 class="text-center">Registro de jugadores</h1>
 
-<form name="registrar-jugador" action="/crear-jugador" method="post">
+    <form class="col-lg-3" name="registrar-jugador" action="/crear-jugador" method="post">
 
-    <div>
-        <label>Usuario: </label>
-        <input type="text" name="jugador_usuario" value="rianjara"/>
-    </div>
-    <div>
-        <label>Password: </label>
-        <input type="password" name="jugador_password" value="rianjara"/>
-    </div>
-    <div>
-        <label>Nombre: </label>
-        <input type="text" name="jugador_nombre" value="Rick"/>
-    </div>
-    <div>
-        <label>Email: </label>
-        <input type="email" name="jugador_email" value="rianjara@espol.edu.ec"/>
-    </div>
-    <div>
-        <label>Perfil: </label>
-        <select name="jugador_perfil">
-            <option value="padre">Padre</option>
-            <option value="hijo">Hijo</option>
-        </select>
-    </div>
-    <div>
-        <button type="submit">Registrar</button>
-    </div>
+        <div class="form-group">
+            <label>Usuario: </label>
+            <input class="form-control" type="text" name="jugador_usuario" value="rianjara"/>
+        </div>
+        <div class="form-group">
+            <label>Password: </label>
+            <input class="form-control" type="password" name="jugador_password" value="rianjara"/>
+        </div>
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input class="form-control" type="text" name="jugador_nombre" value="Rick"/>
+        </div>
+        <div class="form-group">
+            <label>Email: </label>
+            <input class="form-control" type="email" name="jugador_email" value="rianjara@espol.edu.ec"/>
+        </div>
+        <div class="form-group">
+            <label>Perfil: </label>
+            <select class="form-control" name="jugador_perfil">
+                <option value="padre">Padre</option>
+                <option value="hijo">Hijo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="form-control btn btn-default" type="submit">Registrar</button>
+        </div>
 
-</form>
+    </form>
 
 </body>
 </html>

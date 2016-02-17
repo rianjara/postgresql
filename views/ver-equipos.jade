@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1.text-center Equipos
+    table.table.table-hover
+        tr
+            th Id
+            th Nombre
+            th Puntaje
+            th Fecha Creación
+        each equipo in equipos
+            tr
+                td #{equipo.id}
+                td #{equipo.nombre}
+                td #{equipo.puntaje}
+                td #{equipo.fecha_creacion}

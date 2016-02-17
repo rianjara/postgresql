@@ -29,12 +29,7 @@ module.exports = function(sequelize, DataTypes) {
     }, {
         classMethods: {
             associate: function(models) {
-                Usuario.belongsTo(models.Equipo, {
-                    onDelete: "CASCADE",
-                    foreignKey: {
-                        allowNull: false
-                    }
-                });
+                Usuario.belongsTo(models.Equipo);
             }
         }
     });
