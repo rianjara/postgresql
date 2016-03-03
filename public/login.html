@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/libs/normalize.css">
+    <!-- <link rel="stylesheet" href="/libs/bootstrap-3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="libs/bootstrap-3.3.6/css/bootstrap.css">
+
+    <script src="/javascripts/libs/jquery-2.2.0.min.js"></script>
+    <style type="text/css"></style><script src="/libs/bootstrap-3.3.6/js/bootstrap.js"></script>
+
+    <style>
+
+        .vcenter {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div style="max-width: 320px;" class="center-block">
+            <div class="page-header">
+                <h1 class="text-center">CAPSTONE</h1>
+            </div>
+
+            <form name="login" action="/login" method="post">
+
+                <div class="form-group">
+                    <label>Usuario o dirección de correo</label>
+                    <input class="form-control" type="text" name="jugador_usuario" value="rianjara"/>
+                </div>
+                <div class="text-right">
+                    <a href="/password-reset">¿Olvidaste tu contraseña?</a>
+                </div>
+                <div class="form-group">
+                    <label>Contraseña: </label>
+                    <input class="form-control" type="password" name="jugador_password" value="password"/>
+                </div>
+                <div class="form-group">
+                    <button class="form-control btn btn-primary" type="submit">Acceder</button>
+                </div>
+
+                <div class="text-center">
+                    ¿Nuevo en Capstone? <a href="/registro">Crear una cuenta.</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
